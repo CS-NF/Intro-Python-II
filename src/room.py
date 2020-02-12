@@ -16,7 +16,7 @@ class Room:
         if direction == "n":
             return self.n_to
         elif direction == "s":
-            return self.s_to:
+            return self.s_to
         elif direction == "e":
             return self.e_to
         elif direction == "w":
