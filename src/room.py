@@ -8,9 +8,10 @@ class Room:
         self.s_to = None 
         self.e_to = None 
         self.w_to = None 
+        self.items = []
 
     def __str__(self):
-        print(f"{self.room_name} is {self.description}")
+        return f"{self.room_name} is {self.description}"
 
     def room_direction(self, direction):
         if direction == "n":
