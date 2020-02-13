@@ -23,4 +23,19 @@ class Room:
         elif direction == "w":
             return self.w_to
         else:
-            return None
+            return None 
+
+    def inventory(self, inventory_items):
+
+        malay_weapons = ["Sword", "Axe", "Dagger"]
+        long_range_weapons = ["Crossbow", "Slingshot", "Throwing axe"]
+        weak_weapons = ["rock", "stick"]
+
+        if inventory_items == self.n_to:
+            return self.items.append(malay_weapons)
+        elif inventory_items == self.s_to:
+            return self.items.append(long_range_weapons)
+        elif inventory_items == self.e_to:
+            return self.items.append(malay_weapons)
+        elif inventory_items == self.w_to:
+            return self.items.append(weak_weapons)
