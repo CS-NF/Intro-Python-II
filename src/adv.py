@@ -1,11 +1,18 @@
 from room import Room
 from player import Player
-
+from item import Item
 # Declare all the rooms
+
+item = {
+    "sword": Item("Sword", "Sharp tool that allows you to fight off your enemies"),
+    "axe": Item("Axe", "A sharp tool that allows you to find resources"),
+    "dagger": Item("Dagger", "A small sharp tool that allows you to fight your enemies")
+}
+
 
 room = {
     'outside':  Room("Outside Cave Entrance",
-                     "North of you, the cave mount beckons"),
+                     "North of you, the cave mount beckons",),
 
     'foyer':    Room("Foyer", """Dim light filters in from the south. Dusty
 passages run north and east."""),
