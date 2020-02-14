@@ -5,7 +5,7 @@ class Player:
         self.p_current_room = p_starting_room
         self.p_name = p_name
         self.items = []
-
+         
 
     # function that will allow the player to move from room to room
     def move_player(self, direction):
@@ -16,3 +16,12 @@ class Player:
         else:
             print("You cannot move in that direction")
         
+# allows player to hold an item
+    def player_item(self, item):
+        self.items.append(item)
+        print(f"{item} has been picked up")
+
+    # function that will allow the player to drop an item 
+    def item_drop(self, item):
+        self.items.remove(item)
+        print(f"{item} has been droped")
