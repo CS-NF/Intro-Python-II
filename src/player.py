@@ -18,5 +18,10 @@ class Player:
         
 # allows player to hold an item
     def player_item(self, item):
-        self.items == item
-        print(f"{item}")
+        self.items.append(item)
+        print(f"{item} has been picked up")
+
+    # function that will allow the player to drop an item 
+    def item_drop(self, item):
+        self.items.remove(item)
+        print(f"{item} has been droped")
